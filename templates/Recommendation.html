@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Recommendations</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="text-align: center">Recommendations</h3>
+        <br>
+        <br>
+        <center>
+            <div id="divForTable"></div>
+        </center>
+    </div>
+</body>
+
+<script type="text/JavaScript">
+
+    var myData = [
+        ['Hotel 1', 'Address 1'],
+        ['Hotel 2', 'Address 2'],
+        ['Hotel 3', 'Address 3'],
+        ['Hotel 4', 'Address 4'],
+        ['Hotel 5', 'Address 5']
+    ];
+
+    var htmlTable = '<table name="tblRestaurantInfo" id="tblRestaurantInfo" cellpadding="20" style="border-spacing: 0px !important;"><thead></thead><tbody>' + "\n";
+
+    if(myData && myData.length > 0) {
+        sampleItemLength = myData[0].length;
+    }
+
+    for (var $i=0; $i<sampleItemLength; $i++) {
+        var myDataLength = myData.length;
+        var cellIndex = 1;
+        for (var $j=0; $j<myDataLength; $j++) {
+            item = myData[$j];
+            element = item[$i];
+            if (cellIndex == 1) {
+                htmlTable += '<tr>';
+            }
+            htmlTable += '<td style="border-right: solid 1px; border-left: solid 1px">' + element + '</td>' + "\n";
+            cellIndex = cellIndex + 1;
+            if(cellIndex > myDataLength) {
+                htmlTable += '</tr>';
+                cellIndex = 1;
+            }
+        }
+    }
+    htmlTable += '</tbody></table>' + "\n";
+
+    document.getElementById('divForTable').innerHTML = htmlTable;
+
+</script>
+
+</html>

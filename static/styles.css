@@ -1,0 +1,18 @@
+body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+
+
+.w3-card-4{box-shadow:0 4px 4px 0 rgba(100,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: black;
+  border: none;
+  color: white;
+ 
+  padding: 16px 32px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}

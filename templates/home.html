@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+        <body>
+     <header  >
+            <div id="header" class="section">
+                <h1 align="center"><span>Toronto Restuarant Recommendation </span></h1>
+        </div>
+
+    </header>
+        <form  name="myForm" action="{{ url_for('recommend')}}" method="post" onsubmit="">
+          
+              
+                <div align="center" class="w3-card-4">
+                   <h3 align="center"><span>Please select a cuisine </span></h3>
+                  <input type="radio" name="cuisine" value="Japan"> Japanese
+                        
+                  <input type="radio" name="cuisine" value="Thai"> Thai  <br>
+   
+                        <input type="radio" name="cuisine" value="Chinese"> Chinese 
+                  <input type="radio" name="cuisine" value="Mexican"> Mexican<br>
+           
+                  <input type="radio" name="cuisine" value="Indian"> Indian
+
+                  <input type="radio" name="cuisine" value="European"> Italian/French<br>
+            
+                   <input type="radio" name="cuisine" value="Mediterranean"> Mediterranean
+    
+                   <input type="radio" name="cuisine" value="Canadian"> Canadian/Barbeque<br>
+      
+                  <input type="radio" name="cuisine" value="Breakfast & Brunch"> Breakfast&Brunch
+
+                  <input type="radio" name="cuisine" value="Dessert"> Dessert<br><br>
+                 
+            </div>
+            <br>
+            <br>
+            <div align="center" class="w3-card-4">
+                <h3 align="center"><span>cost </span></h3>
+          <input type="radio" name="cost" value="1"> $ <br>
+          <input type="radio" name="cost" value="2"> $$<br>
+          <input type="radio" name="cost" value="3"> $$$ <br>
+           
+            </div>
+            <div align:"center">
+            <input     type="submit" class="btn-info" value="Recommend">
+            </div>
+            </form>
+            <div class="w3-container w3-padding-64 w3-center" id="team">
+            </div>
+ 
+
+    </body>
+</html>
