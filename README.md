@@ -9,8 +9,9 @@ The dataset does not have a label/output.Hence the underlying problem is an exam
 
 
 ### List of files in the repository
-- [restaurant_recommendation.ipynb](https://github.com/A-Aparna/Toronto-Restaurant-Recommendation/blob/master/restaurant_recommendation.ipynb)
-- [Data_Preparation](https://github.com/A-Aparna/Toronto-Restaurant-Recommendation/blob/master/Data_Preparation.ipynb)
+1) [restaurant_recommendation.ipynb](https://github.com/A-Aparna/Toronto-Restaurant-Recommendation/blob/master/restaurant_recommendation.ipynb)
+2) [Data_Preparation](https://github.com/A-Aparna/Toronto-Restaurant-Recommendation/blob/master/Data_Preparation.ipynb)- Data is taken from yelp dataset and prepared which can be used to model.
+3) [Toronto_Restaurants](https://github.com/A-Aparna/Toronto-Restaurant-Recommendation/blob/master/Toronto_Restaurants.xlsx)- The processed dataset which is the output of the file 2 mentioned above
 
 ## About the Data
 The data which is used for modeling has 8 feature columns with no output/label.<br>
